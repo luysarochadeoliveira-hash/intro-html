@@ -11,7 +11,18 @@ body{
     background-color: azure;
     color: black;
 }
+ section{
+            background-color: lightslategray;
+            padding: 16px;
+            margin-bottom: 16px;
+            border-radius: 16px;
+        }
 
+fieldset{
+    border-radius: 16px;
+    background-color: blueviolet;
+
+}
     </style>
 </head>
 <body>
@@ -106,11 +117,66 @@ body{
     <input type="number" name="idade" id="idade" placeholder="18" required min="18" max="120"> <br>
 
     <label for="telefone">Telefone</label>
-    <input type="tel" name="telefone" id="telefone" placeholder="(119897-7688)"> <br>
-</fieldset>
-    </form>
-</search>
-  </main>
-    
+                    <input type="tel" name="telefone" id="telefone" placeholder="(11) 4002-8922" required> <br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <label for="rua">Endereço</label>
+                    <input type="text" id="rua" name="rua" required placeholder="EX.:Rua Ali"> <br>
+
+                    <label for="numero">Número</label>
+                    <input type="number" name="numero" id="numero" min="1" placeholder="Ex. 9"> <br>
+
+                    <label for="estado">Estado</label>
+                    <select name="estado" id="estado">
+                        <option value="">Selecione um estado</option>
+                        <option value="sp">São Paulo</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="mg">Minas Gerais</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferências</legend>
+                    <label>
+                        <input type="checkbox" name="interesses" value="tecnologia">
+                        Tecnologia
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interesses" value="design">
+                        Design
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interesses" value="programacao">
+                        Programação
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Arquivos</legend>
+                    <label for="foto">Foto de perfil</label>
+                    <input type="file" name="foto" id="foto">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Termos e condições</legend>
+                    <label>
+                        <input type="checkbox" name="termos">
+                        Li e aceito os termos de uso.
+                    </label>
+                </fieldset>
+
+                <button type="submit">Criar cadastro</button>
+                <button type="reset">Limpar formulário</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Mago da Silva</p>
+    </footer>
 </body>
 </html>
