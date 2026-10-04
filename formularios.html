@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description">content= Formulários no html
+    <title>Sobre formulários Html</title>
+      <style>
+body{
+    font-family: sans-serif;
+    background-color: azure;
+    color: black;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Formulários HTML</h1>
+    </header>
+
+  <main>
+<section>
+    <h2> O que são formulários?</h2>
+    <p>Os formulários são uma das partes mais importante do html pois ajudam a introduzir uma idéia diferente.</p>
+    <p>O usuário deixa de apenas consumir o conteúdo na página e passa a fornecer dados para o sistema.</p>
+
+    <p>O formulário, de forma resumida, é uma área da página, destinada a coleta de informações.</p>
+
+    <p>Exemplos de uso</p>
+
+    <ul>
+        <li>Login</li>
+        <li>Cadastro</li>
+        <li>Contato</li>
+        <li>Pesquisa</li>
+        <li>Comentários</li>
+        <li>Endereço</li>
+        <li>Inscrições em Newsletter</li>
+    </ul>
+</section>
+
+<section>
+<h2>Criando um formulário básico</h2>
+
+<form action="">
+
+<label for="">Nome</label>
+<input type="text" id="nome">
+
+<button>Enviar</button>
+</form>
+
+<ul>
+<li>&it;label &gt; : Representa um rótulo ou uma etiqueta para um campo. É um recurso fundamental para a acessibilidade</li>
+
+<li><strong>for</strong> : Para conectarmos o nosso rótulo (label) ao input, utilizamos o atributo for. Ele serve para criar a relação com o id do input.</li>
+
+<li><strong>id</strong> : O atributo ID serve para identificar de forma única um elemento dentro da página. </li>
+
+
+<li> <strong> type</strong> : Esse atributo serve para definirmos o tipo de input que desejamos apresentar para o usuário com base no dado que queremos coletar.</li>
+</ul>
+
+</section>
+
+<section>
+    <h2>Explorando o formulário</h2>
+
+    <form>
+<label for="email">Email</label>
+<input type="email" id="email" placeholder="anna@exemplo.com.br"> <br>
+
+<label for="senha">senha</label>
+<input type="password" id="senha"required placeholder="************"required> <br>
+
+<label for="mensagem">Mensagem</label>
+<textarea name="" id="mensagem" placeholder="Olá, seja bem vindo!"cols="40" rows="10" maxlength="40"></textarea> <br>
+
+<label for="Newsletter">Quero receber novidades por email</label>
+<input type="checkbox" name="Newsletter"id="Newsletter"> <br>
+
+<button>Enviar</button>
+    </form>
+</section>
+
+<search>
+    <h2>Formulários agrupados</h2>
+
+    <form action="">
+<fieldset>
+    <legend>Dados pessoais</legend>
+    <label for="nome">nome</label>
+    <input type="text" id="nome" name="nome" placeholder="Ex ana silva" required> <br>
+
+    <label for="email">email</label>
+    <input type="email" name="email" placeholder="ana@exemplo.com" required> <br>
+
+    <label for="senha">senha</label>
+<input type="password" id="senha"required placeholder="************"required> <br>
+
+    <label for="nascimento">Data de nascimento</label>
+    <input type="date" name="nascimento" id="nascimento" required> <br>
+
+    <label for="idade">idade</label>
+    <input type="number" name="idade" id="idade" placeholder="18" required min="18" max="120"> <br>
+
+    <label for="telefone">Telefone</label>
+    <input type="tel" name="telefone" id="telefone" placeholder="(119897-7688)"> <br>
+</fieldset>
+    </form>
+</search>
+  </main>
+    
+</body>
+</html>
